@@ -1,0 +1,38 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.container {
+  display: flex;
+  gap: 20px;
+
+  .club {
+    width: 210px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    transition: .4s;
+
+    &:hover {
+      color: black;
+      background-color: transparent;
+      transition: 0.4s;
+    }
+  }
+  .shop {
+    width: 200px;
+    height: 60px;
+    border: 2px solid white;
+    text-transform: uppercase;
+      transition: .4s;
+      font-weight: 900;
+
+
+    &:hover {
+      background-color: white;
+      color: black;
+      transition: .4s;
+    }
+  }
+}

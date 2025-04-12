@@ -1,0 +1,21 @@
+@mixin centered-row($jc:space-between) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+
+@mixin centered-column($jc:space-between, $ai: start) {
+    display: flex;
+    flex-direction: column;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+
+
+@mixin backgroun-ajusting($bg:$section1-bg) {
+    background-image: $bg;
+    background-repeat: none;
+    background-size: cover;
+
+}

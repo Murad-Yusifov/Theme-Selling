@@ -1,0 +1,31 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.container {
+    width: $main-w ;
+    height: $main-h;
+    @include backgroun-ajusting;
+    @include centered-row($jc:center);
+
+        
+    section {
+        width: 95% ;
+        height: $main-h;
+        @include centered-column($jc:center);
+        align-content: start;
+        gap: 40px;
+
+        h1 {
+            font-size: 35px;
+
+
+        }
+
+        p {
+            display: block;
+            width: 600px;
+            font-size: 20px;
+        }
+
+    }
+}
