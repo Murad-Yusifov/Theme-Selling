@@ -38,9 +38,9 @@ const Header2 = () => {
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#special">Special</a></li>
-                    <li>Testionials</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a href="#test">Testionials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
