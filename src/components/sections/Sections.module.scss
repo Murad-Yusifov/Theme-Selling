@@ -28,267 +28,271 @@
 }
 
 .text {
-    width: $main-w;
-    padding:40px;
+  width: $main-w;
+  padding: 40px;
 
-    @include centered-column($jc: center);
-    align-items: center;
+  @include centered-column($jc: center);
+  align-items: center;
 
-    h1 {
-      font-size: 35px;
-      font-weight: 900;
-
-    }
-
-    p {
-      width: 70%; 
-      max-width: 600px;
-      display: block;
-      text-align: center;
-    }
+  h1 {
+    font-size: 35px;
+    font-weight: 900;
   }
 
+  p {
+    width: 70%;
+    max-width: 600px;
+    display: block;
+    text-align: center;
+  }
+}
 
 .section2 {
+  width: $main-w;
+  height: 100;
+  @include centered-column($jc: center);
+  align-items: center;
+
+  .wrapper {
     width: $main-w;
-    height: 100;
-    @include centered-column($jc:center);
-    align-items: center;
-  
-   
-    .wrapper {
-      width: $main-w;
-      @include centered-row($jc: center);
-  
-      .container1 {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+    @include centered-row($jc: center);
+
+    .container1 {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 0 30px;
+
+      .card1 {
+        width: 250px;
+        height: 350px;
+        background-color: white;
+        color: black;
+        @include centered-column;
         align-items: center;
-        gap: 40px;
-        padding: 0 30px;
-  
-        .card1 {
-          width: 250px;
-          height: 350px;
-          background-color: white;
-          color: black;
-          @include centered-column;
+        align-content: space-between;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .imageContainer {
+          width: 100%;
+          height: 60%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
           align-items: center;
-          align-content: space-between;
-          overflow: hidden; 
-          border-radius: 10px; 
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-          transition: transform 0.2s ease-in-out;
-  
+
+          .img {
+            width: 70%;
+            height: 90%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
           &:hover {
-            transform: translateY(-5px);
+            border: 2px solid orangered;
           }
-  
-          .imageContainer {
-            width: 90%;
-            height: 50%;
-            overflow: hidden; 
+        }
+
+        p {
+          font-size: 15px;
+          padding: 0 20px;
+          text-align: center;
+        }
+
+        div {
+          width: 100%;
+          text-align: center;
+          @include centered-row($jc: center);
+          gap: 20px;
+
+          span {
             display: flex;
-            justify-content: center;
             align-items: center;
-  
-            .img {
-              width: 70%;
-              height: 90%;
-              object-fit: cover;
-              transition: transform 0.3s ease-in-out;
-  
-              &:hover {
-                transform: scale(1.1); 
-              
-              }
+            gap: 5px;
+            font-size: 14px;
+
+            svg {
+              font-size: 18px;
             }
           }
-  
-          p {
-            font-size: 15px;
-            padding: 0 20px;
-            text-align: center;
-          }
-  
-          div {
-            width: 100%;
-            text-align: center;
-            @include centered-row($jc: center);
-            gap: 20px;
-  
-            span {
-              display: flex;
-              align-items: center;
-              gap: 5px;
-              font-size: 14px;
-  
-              svg {
-                font-size: 18px;
-              }
+        }
+
+        .btns {
+          width: 100%;
+          @include centered-row($jc: center);
+          gap: 10px;
+          padding-bottom: 10px;
+
+          .btn1,
+          .btn2 {
+            width: 80px;
+            height: 40px;
+            border: none;
+            font-weight: 550;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.4s ease;
+
+            &:hover {
+              transform: scale(1.05);
             }
           }
-  
-          .btns {
-            width: 100%;
-            @include centered-row($jc: center);
-            gap: 10px;
-            padding-bottom: 10px;
-  
-            .btn1,
-            .btn2 {
-              width: 80px;
-              height: 40px;
-              border: none;
-              font-weight: 550;
-              border-radius: 5px; 
-              cursor: pointer;
-              transition: 0.4s ease;
-  
-              &:hover {
-                transform: scale(1.05); 
-              }
-            }
-  
-            .btn1 {
-              background-color: black;
-              color: white;
-  
-              &:hover {
-                background-color: white;
-                color: black;
-              }
-            }
-  
-            .btn2 {
+
+          .btn1 {
+            background-color: black;
+            color: white;
+
+            &:hover {
               background-color: white;
               color: black;
-  
-              &:hover {
-                background-color: black;
-                color: white;
-              }
+            }
+          }
+
+          .btn2 {
+            background-color: white;
+            color: black;
+
+            &:hover {
+              background-color: black;
+              color: white;
             }
           }
         }
       }
     }
   }
+}
 
-  .section3 {
+.section3 {
+  width: $main-w;
+  height: $main-h;
+  @include centered-column($jc: center);
+  align-items: center;
+  .wrapper {
     width: $main-w;
-    height: $main-h;
-    @include centered-column($jc:center);
-    align-items: center;
-    .wrapper {
-        width: $main-w;
-        @include centered-row($jc: center);
-        .container1 {
-            width: 90%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            padding: 0 30px;
-            .card1 {
-                width: 250px;
-                height: 400px;
-                background-color: white;
-                color: black;
-                @include centered-column;
-                align-items: center;
-                align-content: space-between;
-                overflow: hidden; 
-                border-radius: 10px; 
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-                transition: transform 0.2s ease-in-out;
-        
-                &:hover {
-                  transform: translateY(-5px);
-                }
+    @include centered-row($jc: center);
+    .container1 {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 0 30px;
+      .card1 {
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        color: black;
+        @include centered-column;
+        align-items: center;
+        align-content: space-between;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
 
-                .img {
-                    width: 70%;
-                    height: 50%;
-              transition: transform 0.3s ease-in-out;
-
-
-                    &:hover {
-                      transform: scale(1.1); 
-                    
-                    }
-                }
-
-                p {
-                    font-size: 15px;
-                    padding: 0 20px;
-                    text-align: center;
-                  }
-          
-                  div {
-                    width: 100%;
-                    text-align: center;
-                    @include centered-row($jc: center);
-                    gap: 20px;
-          
-                    span {
-                      display: flex;
-                      align-items: center;
-                      gap: 5px;
-                      font-size: 14px;
-          
-                      svg {
-                        font-size: 18px;
-                      }
-                    }
-                  }
-
-                .btns {
-                    width: 100%;
-                    @include centered-row($jc: center);
-                    gap: 10px;
-                    padding-bottom: 10px;
-          
-                    .btn1,
-                    .btn2 {
-                      width: 80px;
-                      height: 40px;
-                      border: none;
-                      font-weight: 550;
-                      border-radius: 5px; 
-                      cursor: pointer;
-                      transition: 0.4s ease;
-          
-                      &:hover {
-                        transform: scale(1.05); 
-                      }
-                    }
-          
-                    .btn1 {
-                      background-color: black;
-                      color: white;
-          
-                      &:hover {
-                        background-color: white;
-                        color: black;
-                      }
-                    }
-          
-                    .btn2 {
-                      background-color: white;
-                      color: black;
-          
-                      &:hover {
-                        background-color: black;
-                        color: white;
-                      }
-                    }
-                  }
-            }
+        &:hover {
+          transform: translateY(-5px);
         }
+        .imageContainer {
+          width: 100%;
+          height: 50%;
+          .img {
+            width: 70%;
+            height: 50%;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          &:hover {
+            border: 2px solid orangered;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          padding: 0 20px;
+          text-align: center;
+        }
+
+        div {
+          width: 100%;
+          text-align: center;
+          @include centered-row($jc: center);
+          gap: 20px;
+
+          span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+
+            svg {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .btns {
+          width: 100%;
+          @include centered-row($jc: center);
+          gap: 10px;
+          padding-bottom: 10px;
+
+          .btn1,
+          .btn2 {
+            width: 80px;
+            height: 40px;
+            border: none;
+            font-weight: 550;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.4s ease;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+
+          .btn1 {
+            background-color: black;
+            color: white;
+
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+
+          .btn2 {
+            background-color: white;
+            color: black;
+
+            &:hover {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+      }
     }
   }
-  
+}

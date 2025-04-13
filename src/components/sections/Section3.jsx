@@ -22,7 +22,7 @@ const Section3 = () => {
         <section className={styles.section3} id="product">
               <div className={styles.wrapper}>
                       <div className={styles.container1}>
-                        {product.slice(12, 15).map((item) => (
+                        {product.slice(6, 9).map((item) => (
                           <div className={styles.card1} key={item.id}>
                             <div className={styles.imageContainer}>
                               <img
