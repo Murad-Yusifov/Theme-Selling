@@ -13,9 +13,9 @@
 
 
 
-@mixin backgroun-ajusting($bg:$section1-bg) {
+@mixin backgroun-ajusting($bg:$section-bg) {
     background-image: $bg;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
 
 }

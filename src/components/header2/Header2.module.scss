@@ -5,10 +5,12 @@
 .wrapper {
   width: $main-w;
   border: 1px solid white;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  color: black;
   @include centered-row($jc:center);
   position: sticky;
   top: 0;
+  z-index: 3;
 
 header {
   width: 80%;
@@ -26,10 +28,33 @@ header {
     @include centered-row;
     gap: 25px;
 
-    li:active {
+    li {
+      cursor: pointer;
+
+     
+    }
+    a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition: 0.4s;
+
+
+      &:hover {
+        color: orangered;
+        transition: 0.4s;
+      }
+    }
+
+    a:active {
         color: $main-c;
     }
   }
 }
 }
+}
+
+.section3 {
+  width: $main-w;
+  height: $main-h;
+  
 }
