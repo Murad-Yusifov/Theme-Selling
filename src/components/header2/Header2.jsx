@@ -35,7 +35,7 @@ const Header2 = () => {
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#product">Products</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#special">Special</a></li>
                     <li><a href="#test">Testionials</a></li>

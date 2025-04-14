@@ -28,7 +28,7 @@ const Section2 = () => {
             consequatur laboriosam ipsam.
           </p>
         </div>
-      <section className={styles.section2} id="products">
+      <section className={styles.section2}>
     
         <div className={styles.wrapper}>
           <div className={styles.container1}>

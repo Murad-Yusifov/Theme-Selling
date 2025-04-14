@@ -6,26 +6,32 @@
   gap: 20px;
 
   .club {
-    width: 210px;
+    width: 220px;
     height: 60px;
     text-transform: uppercase;
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 900;
     transition: .4s;
+    border: 0;
     cursor: pointer;
 
     &:hover {
-      color: black;
+      color: rgb(255, 255, 255);
       background-color: transparent;
       transition: 0.4s;
+      border: 2px solid white;
     }
   }
   .shop {
     width: 200px;
     height: 60px;
+    border:0;
     border: 2px solid white;
+
     text-transform: uppercase;
+    background-color: transparent;
+    color: white;
       transition: .4s;
       font-weight: 900;
       cursor: pointer;
@@ -35,6 +41,8 @@
       background-color: white;
       color: black;
       transition: .4s;
+    border: 2px solid rgb(0, 0, 0);
+
     }
   }
 }
